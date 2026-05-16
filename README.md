@@ -52,4 +52,4 @@ In rural areas, elderly patients often miss healthcare follow-ups because they s
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/Arogya-Sahaya-Local.git
+   git clone https://github.com/srisudarshanh-2004/_arogyaahaya.git
