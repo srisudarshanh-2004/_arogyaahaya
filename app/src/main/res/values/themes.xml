@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Elderly-friendly theme:
+        • All body text >= 18sp (PRD requirement)
+        • High-contrast colors (WCAG AA 4.5:1 ratio)
+        • Tap targets >= 48dp via button/widget sizes
+    -->
+    <style name="Theme.ArogyaSahaya" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <!-- Make all default text larger for elderly users -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:windowBackground">@color/background_primary</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.ArogyaSahaya.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.ArogyaSahaya</item>
+    </style>
+
+    <!-- Bottom nav text styles (large enough for elderly) -->
+    <style name="BottomNavTextActive">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomNavTextInactive">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Card style used across the app -->
+    <style name="CardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+</resources>

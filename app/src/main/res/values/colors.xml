@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color (deep blue — high contrast on white) -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#E3F2FD</color>
+
+    <!-- SOS Red (high-contrast for emergency button) -->
+    <color name="sos_red">#C62828</color>
+    <color name="sos_red_dark">#B71C1C</color>
+
+    <!-- Vital green (save vitals button) -->
+    <color name="vital_green">#2E7D32</color>
+
+    <!-- Background -->
+    <color name="background_primary">#FFFFFF</color>
+    <color name="background_secondary">#F5F5F5</color>
+
+    <!-- Text — WCAG AA contrast on white background -->
+    <color name="text_primary">#212121</color>      <!-- 16:1 contrast ratio -->
+    <color name="text_secondary">#616161</color>    <!-- 5.9:1 contrast ratio -->
+
+    <!-- Neutral greys -->
+    <color name="grey_light">#E0E0E0</color>
+    <color name="grey_medium">#9E9E9E</color>
+
+    <!-- Standard -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

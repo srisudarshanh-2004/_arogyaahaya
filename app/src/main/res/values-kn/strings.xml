@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಆರೋಗ್ಯ ಸಹಾಯ</string>
+    <string name="app_tagline">ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಆರೋಗ್ಯ ಸಂಗಾತಿ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">ಮುಖಪುಟ</string>
+    <string name="nav_medicines">ಔಷಧಿಗಳು</string>
+    <string name="nav_vitals">ವೈಟಲ್ಸ್</string>
+    <string name="nav_asha">ಆಶಾ</string>
+    <string name="nav_profile">ಪ್ರೊಫೈಲ್</string>
+
+    <!-- Onboarding -->
+    <string name="welcome_title">ಆರೋಗ್ಯ ಸಹಾಯಕ್ಕೆ ಸ್ವಾಗತ</string>
+    <string name="welcome_subtitle">ಔಷಧಿಗಳ ಜ್ಞಾಪನೆಗಳು ಮತ್ತು ವೈಟಲ್ಸ್ ಟ್ರ್ಯಾಕಿಂಗ್‌ಗಾಗಿ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಆರೋಗ್ಯ ಸಂಗಾತಿ.</string>
+    <string name="get_started">ಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="onboarding_subtitle">ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಆರೋಗ್ಯ ಸಂಗಾತಿ. ನಿಮ್ಮ ವೈದ್ಯಕೀಯ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಹೊಂದಿಸೋಣ.</string>
+
+    <!-- Login / Auth -->
+    <string name="welcome_back">ಸುಸ್ವಾಗತ 🙏</string>
+    <string name="create_account">ಖಾತೆಯನ್ನು ರಚಿಸಿ 🙏</string>
+    <string name="email_label">ಇಮೇಲ್ ವಿಳಾಸ</string>
+    <string name="email_hint">ಉದಾ: ramu@gmail.com</string>
+    <string name="password_label">ಪಾಸ್‌ವರ್ಡ್</string>
+    <string name="password_hint">ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ (ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳು)</string>
+    <string name="confirm_password_label">ಪಾಸ್‌ವರ್ಡ್ ದೃಢೀಕರಿಸಿ</string>
+    <string name="confirm_password_hint">ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಮರು-ನಮೂದಿಸಿ</string>
+    <string name="mobile_label">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ</string>
+    <string name="mobile_hint">10-ಅಂಕಿಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="otp_disclaimer">📌 OTP ಲಾಗಿನ್ ಅನುಕರಿಸಲ್ಪಟ್ಟಿದೆ (ಆಫ್‌ಲೈನ್ ಅಪ್ಲಿಕೇಶನ್). ನಿಮ್ಮ ಸಂಖ್ಯೆಯನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಉಳಿಸಲಾಗಿದೆ.</string>
+    <string name="login_button">🔐 ಲಾಗಿನ್</string>
+    <string name="register_button">📝 ನೋಂದಣಿ</string>
+    <string name="new_user_text">ಹೊಸ ಬಳಕೆದಾರರೇ? ಖಾತೆಯನ್ನು ರಚಿಸಿ</string>
+    <string name="existing_user_text">ಈಗಾಗಲೇ ಖಾತೆ ಹೊಂದಿದ್ದೀರಾ? ಲಾಗಿನ್ ಮಾಡಿ</string>
+    <string name="skip_login">ಸದ್ಯಕ್ಕೆ ಬಿಟ್ಟುಬಿಡಿ →</string>
+    <string name="email_tab">📧 ಇಮೇಲ್</string>
+    <string name="mobile_tab">📱 ಮೊಬೈಲ್</string>
+    <string name="mobile_login_button">📱 OTP ಕಳುಹಿಸಿ ಮತ್ತು ಮುಂದುವರಿಸಿ</string>
+
+    <!-- Home -->
+    <string name="greeting_format">ನಮಸ್ತೆ, %1$s! 🙏</string>
+    <string name="emergency_contact_format">ತುರ್ತು: %1$s · %2$s</string>
+    <string name="emergency_contact_none">ತುರ್ತು ಸಂಪರ್ಕ: —</string>
+    <string name="medicine_count_format">ಇಂದು %1$d ಔಷಧಿಗಳು ಸಕ್ರಿಯವಾಗಿವೆ</string>
+    <string name="adherence_rate_format">7-ದಿನದ ಅನುಸರಣೆ: %1$d%%</string>
+    <string name="emergency_label">ತುರ್ತು ಪರಿಸ್ಥಿತಿ</string>
+    <string name="sos_button_label">🚨 SOS\nಸಹಾಯಕ್ಕಾಗಿ ಕರೆ ಮಾಡಿ</string>
+    <string name="todays_reminders">ಇಂದಿನ ಜ್ಞಾಪನೆಗಳು</string>
+    <string name="reminders_info">ಜ್ಞಾಪನೆಗಳು ನಿಮ್ಮ ನಿಗದಿತ ಸಮಯಕ್ಕೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬರುತ್ತವೆ.\nಅವುಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಔಷಧಿಗಳ ಟ್ಯಾಬ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="sos_dialog_title">🚨 ತುರ್ತು SOS</string>
+    <string name="sos_dialog_message">%1$s ಅವರಿಗೆ ಕರೆ ಮಾಡಲಾಗುತ್ತಿದೆ\n%2$s</string>
+    <string name="sos_call_now">📞 ಈಗಲೇ ಕರೆ ಮಾಡಿ</string>
+    <string name="sos_cancel">ರದ್ದುಮಾಡು</string>
+    <string name="sos_no_contact">⚠ ಯಾವುದೇ ತುರ್ತು ಸಂಪರ್ಕವನ್ನು ಹೊಂದಿಸಿಲ್ಲ! ದಯವಿಟ್ಟು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಅನ್ನು ನವೀಕರಿಸಿ.</string>
+
+    <!-- Medicine -->
+    <string name="nav_medicines_title">💊 ನನ್ನ ಔಷಧಿಗಳು</string>
+    <string name="add_medicine">ಔಷಧಿ ಸೇರಿಸಿ</string>
+    <string name="edit_medicine">ಔಷಧಿ ಬದಲಿಸಿ</string>
+    <string name="no_medicines">ಇನ್ನೂ ಯಾವುದೇ ಔಷಧಿಗಳನ್ನು ಸೇರಿಸಿಲ್ಲ. ನಿಮ್ಮ ಮೊದಲ ಔಷಧಿಯನ್ನು ಸೇರಿಸಲು + ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="medicine_name_label">ಔಷಧಿಯ ಹೆಸರು *</string>
+    <string name="medicine_name_hint">ಉದಾ: ಮೆಟ್‌ಫಾರ್ಮಿನ್</string>
+    <string name="dosage_label">ಡೋಸೇಜ್</string>
+    <string name="dosage_hint">ಉದಾ: 500mg ಅಥವಾ 1 ಮಾತ್ರೆ</string>
+    <string name="when_to_take_label">ಇದನ್ನು ಯಾವಾಗ ತೆಗೆದುಕೊಳ್ಳಬೇಕು? *</string>
+    <string name="morning">🌅 ಬೆಳಿಗ್ಗೆ</string>
+    <string name="afternoon">☀️ ಮಧ್ಯಾಹ್ನ</string>
+    <string name="night">🌙 ರಾತ್ರಿ</string>
+    <string name="time_label">ಸಮಯ: </string>
+    <string name="notes_optional_label">ಟಿಪ್ಪಣಿಗಳು (ಐಚ್ಛಿಕ)</string>
+    <string name="save_medicine">💾 ಔಷಧಿಯನ್ನು ಉಳಿಸಿ</string>
+    <string name="cancel">ರದ್ದುಮಾಡು</string>
+    <string name="medicine_saved">ಔಷಧಿಯನ್ನು ಉಳಿಸಲಾಗಿದೆ!</string>
+    <string name="as_prescribed">ಸೂಚಿಸಿದಂತೆ</string>
+    <string name="please_select_time">ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಸಮಯದ ಸ್ಲಾಟ್ ಅನ್ನು ಆರಿಸಿ</string>
+    <string name="dosage_format">ಡೋಸೇಜ್: %1$s</string>
+    <string name="morning_time_format">🌅 ಬೆಳಿಗ್ಗೆ (%1$s)</string>
+    <string name="afternoon_time_format">☀️ ಮಧ್ಯಾಹ್ನ (%1$s)</string>
+    <string name="night_time_format">🌙 ರಾತ್ರಿ (%1$s)</string>
+    <string name="edit_button">ಬದಲಿಸಿ</string>
+    <string name="delete_button">ಅಳಿಸಿ</string>
+
+    <!-- Vitals -->
+    <string name="vital_log_title">📈 ವೈಟಲ್ ಲಾಗ್</string>
+    <string name="todays_readings">ಇಂದಿನ ರೀಡಿಂಗ್‌ಗಳು</string>
+    <string name="blood_pressure_label">ರಕ್ತದೊತ್ತಡ (mmHg)</string>
+    <string name="systolic_hint">ಸಿಸ್ಟೊಲಿಕ್\n(ಉದಾ: 120)</string>
+    <string name="diastolic_hint">ಡಯಾಸ್ಟೊಲಿಕ್\n(ಉದಾ: 80)</string>
+    <string name="heart_rate_label">ಹೃದಯ ಬಡಿತ (bpm)</string>
+    <string name="heart_rate_hint">ಉದಾ: 72</string>
+    <string name="blood_glucose_label">ರಕ್ತದ ಸಕ್ಕರೆ (mg/dL)</string>
+    <string name="blood_glucose_hint">ಉದಾ: 110</string>
+    <string name="notes_hint">ಟಿಪ್ಪಣಿಗಳು (ಐಚ್ಛಿಕ)</string>
+    <string name="save_vitals">💾 ಇಂದಿನ ವೈಟಲ್ಸ್ ಉಳಿಸಿ</string>
+    <string name="seven_day_trend">📈 7-ದಿನದ ಪ್ರವೃತ್ತಿ</string>
+    <string name="chart_no_data">ನಿಮ್ಮ ಪ್ರವೃತ್ತಿಯ ಗ್ರಾಫ್ ನೋಡಲು 7 ದಿನಗಳವರೆಗೆ ವೈಟಲ್ಸ್ ಲಾಗ್ ಮಾಡಿ</string>
+    <string name="vitals_saved">ವೈಟಲ್ಸ್ ಉಳಿಸಲಾಗಿದೆ!</string>
+    <string name="vitals_input_error">ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ರಕ್ತದೊತ್ತಡ ಅಥವಾ ಹೃದಯ ಬಡಿತವನ್ನು ನಮೂದಿಸಿ.</string>
+
+    <!-- ASHA -->
+    <string name="asha_connect_title">🏥 ಆಶಾ ಕನೆಕ್ಟ್</string>
+    <string name="asha_connect_subtitle">ನಿಮ್ಮ ಪ್ರದೇಶದಲ್ಲಿ ಮುಂಬರುವ ಆರೋಗ್ಯ ಶಿಬಿರಗಳು ಮತ್ತು ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯ ಭೇಟಿಗಳು</string>
+    <string name="upcoming_events">ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮಗಳು</string>
+    <string name="no_asha_events">ಯಾವುದೇ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ನಿಗದಿಪಡಿಸಿಲ್ಲ. ಶೀಘ್ರದಲ್ಲೇ ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ!</string>
+    <string name="health_camp">ಆರೋಗ್ಯ ಶಿಬಿರ</string>
+    <string name="asha_visit">ಆಶಾ ಭೇಟಿ</string>
+    <string name="vaccination">ಲಸಿಕೆ</string>
+    <string name="wellness_check">ವೆಲ್ನೆಸ್ ಚೆಕ್</string>
+    <string name="location_format">📍 %1$s</string>
+
+    <!-- Profile -->
+    <string name="my_profile">👤 ನನ್ನ ಪ್ರೊಫೈಲ್</string>
+    <string name="dark_mode">🌙 ಡಾರ್ಕ್ ಮೋಡ್</string>
+    <string name="select_language">🌐 ಭಾಷೆಯನ್ನು ಆರಿಸಿ</string>
+    <string name="full_name">ಪೂರ್ಣ ಹೆಸರು</string>
+    <string name="age">ವಯಸ್ಸು</string>
+    <string name="gender">ಲಿಂಗ</string>
+    <string name="blood_group">ರಕ್ತದ ಗುಂಪು</string>
+    <string name="chronic_conditions">ದೀರ್ಘಕಾಲದ ಕಾಯಿಲೆಗಳು</string>
+    <string name="blood_group_label">ರಕ್ತದ ಗುಂಪು: %1$s</string>
+    <string name="emergency_contact">🚨 ತುರ್ತು ಸಂಪರ್ಕ</string>
+    <string name="contact_name">ಸಂಪರ್ಕದ ಹೆಸರು</string>
+    <string name="phone_number">ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="edit_profile">✏️ ಪ್ರೊಫೈಲ್ ಬದಲಿಸಿ</string>
+    <string name="save_profile">💾 ಪ್ರೊಫೈಲ್ ಉಳಿಸಿ</string>
+    <string name="save_and_continue">✅ ಉಳಿಸಿ ಮತ್ತು ಮುಂದುವರಿಸಿ</string>
+    <string name="logout">🚪 ಲಾಗ್ ಔಟ್</string>
+    <string name="logout_confirm_title">ಲಾಗ್ ಔಟ್</string>
+    <string name="logout_confirm_message">ನೀವು ಲಾಗ್ ಔಟ್ ಮಾಡಲು ಖಚಿತವಾಗಿದ್ದೀರಾ?</string>
+    <string name="profile_updated">ಪ್ರೊಫೈಲ್ ನವೀಕರಿಸಲಾಗಿದೆ!</string>
+    <string name="name_required">ಹೆಸರು ಅಗತ್ಯವಿದೆ</string>
+    <string name="age_required">ವಯಸ್ಸು ಅಗತ್ಯವಿದೆ</string>
+    <string name="required">ಅಗತ್ಯವಿದೆ</string>
+    <string name="logged_in_with">ಇದರೊಂದಿಗೆ ಲಾಗಿನ್ ಆಗಿದ್ದೀರಿ: %1$s</string>
+
+    <!-- Notifications -->
+    <string name="notif_medicine_title">ನಿಮ್ಮ %1$s ಔಷಧಿಯ ಸಮಯವಾಗಿದೆ</string>
+    <string name="notif_medicine_body">%1$s — %2$s. ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ ಎಂದು ಗುರುತಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="notif_action_taken">✓ ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ</string>
+    <string name="notif_action_skip">ಬಿಟ್ಟುಬಿಡಿ</string>
+
+    <!-- Arrays for spinners -->
+    <string-array name="gender_options">
+        <item>ಲಿಂಗವನ್ನು ಆರಿಸಿ</item>
+        <item>ಪುರುಷ</item>
+        <item>ಮಹಿಳೆ</item>
+        <item>ಇತರ</item>
+        <item>ಹೇಳಲು ಇಷ್ಟವಿಲ್ಲ</item>
+    </string-array>
+
+    <string-array name="blood_group_options">
+        <item>ತಿಳಿದಿಲ್ಲ</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+</resources>

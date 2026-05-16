@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Arogya Sahaya</string>
+    <string name="app_tagline">Your Digital Health Companion</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_medicines">Medicines</string>
+    <string name="nav_vitals">Vitals</string>
+    <string name="nav_asha">ASHA</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Onboarding -->
+    <string name="welcome_title">Welcome to Arogya Sahaya</string>
+    <string name="welcome_subtitle">Your personal health companion for medicine reminders and vital tracking.</string>
+    <string name="get_started">Get Started</string>
+    <string name="onboarding_subtitle">Your digital health companion. Let\'s set up your medical profile.</string>
+
+    <!-- Login / Auth -->
+    <string name="welcome_back">Welcome Back 🙏</string>
+    <string name="create_account">Create Account 🙏</string>
+    <string name="email_label">Email Address</string>
+    <string name="email_hint">e.g. ramu@gmail.com</string>
+    <string name="password_label">Password</string>
+    <string name="password_hint">Enter password (min 6 chars)</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="confirm_password_hint">Re-enter your password</string>
+    <string name="mobile_label">Mobile Number</string>
+    <string name="mobile_hint">Enter 10-digit mobile number</string>
+    <string name="otp_disclaimer">📌 OTP login is simulated (offline app). Your number is saved locally.</string>
+    <string name="login_button">🔐  Login</string>
+    <string name="register_button">📝  Register</string>
+    <string name="new_user_text">New user? Create an account</string>
+    <string name="existing_user_text">Already have an account? Login</string>
+    <string name="skip_login">Skip login for now →</string>
+    <string name="email_tab">📧  Email</string>
+    <string name="mobile_tab">📱  Mobile</string>
+    <string name="mobile_login_button">📱  Send OTP &amp; Continue</string>
+
+    <!-- Home -->
+    <string name="greeting_format">Namaste, %1$s! 🙏</string>
+    <string name="emergency_contact_format">Emergency: %1$s · %2$s</string>
+    <string name="emergency_contact_none">Emergency contact: —</string>
+    <string name="medicine_count_format">%1$d medicine(s) active today</string>
+    <string name="adherence_rate_format">7-day adherence: %1$d%%</string>
+    <string name="emergency_label">Emergency</string>
+    <string name="sos_button_label">🚨  SOS\nCALL FOR HELP</string>
+    <string name="todays_reminders">Today\'s Reminders</string>
+    <string name="reminders_info">Reminders fire automatically at your scheduled times.\nCheck the Medicines tab to manage them.</string>
+    <string name="sos_dialog_title">🚨 Emergency SOS</string>
+    <string name="sos_dialog_message">Calling %1$s\n%2$s</string>
+    <string name="sos_call_now">📞 Call Now</string>
+    <string name="sos_cancel">Cancel</string>
+    <string name="sos_no_contact">⚠ No emergency contact set! Please update your profile.</string>
+
+    <!-- Medicine -->
+    <string name="nav_medicines_title">💊  My Medicines</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="edit_medicine">Edit Medicine</string>
+    <string name="no_medicines">No medicines added yet. Tap + to add your first medicine.</string>
+    <string name="medicine_name_label">Medicine Name *</string>
+    <string name="medicine_name_hint">e.g. Metformin</string>
+    <string name="dosage_label">Dosage</string>
+    <string name="dosage_hint">e.g. 500mg or 1 tablet</string>
+    <string name="when_to_take_label">When to take it? *</string>
+    <string name="morning">🌅  Morning</string>
+    <string name="afternoon">☀️  Afternoon</string>
+    <string name="night">🌙  Night</string>
+    <string name="time_label">Time: </string>
+    <string name="notes_optional_label">Notes (optional)</string>
+    <string name="save_medicine">💾  Save Medicine</string>
+    <string name="cancel">Cancel</string>
+    <string name="medicine_saved">Medicine saved!</string>
+    <string name="as_prescribed">as prescribed</string>
+    <string name="please_select_time">Please select at least one time slot</string>
+    <string name="dosage_format">Dosage: %1$s</string>
+    <string name="morning_time_format">🌅 Morning (%1$s)</string>
+    <string name="afternoon_time_format">☀️ Afternoon (%1$s)</string>
+    <string name="night_time_format">🌙 Night (%1$s)</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+
+    <!-- Vitals -->
+    <string name="vital_log_title">📈  Vital Log</string>
+    <string name="todays_readings">Today\'s Readings</string>
+    <string name="blood_pressure_label">Blood Pressure (mmHg)</string>
+    <string name="systolic_hint">Systolic\n(e.g. 120)</string>
+    <string name="diastolic_hint">Diastolic\n(e.g. 80)</string>
+    <string name="heart_rate_label">Heart Rate (bpm)</string>
+    <string name="heart_rate_hint">e.g. 72</string>
+    <string name="blood_glucose_label">Blood Glucose (mg/dL)</string>
+    <string name="blood_glucose_hint">e.g. 110</string>
+    <string name="notes_hint">Notes (optional)</string>
+    <string name="save_vitals">💾  Save Today\'s Vitals</string>
+    <string name="seven_day_trend">📈  7-Day Trend</string>
+    <string name="chart_no_data">Log vitals for 7 days to see your trend graph</string>
+    <string name="vitals_saved">Vitals saved!</string>
+    <string name="vitals_input_error">Please enter at least Blood Pressure or Heart Rate.</string>
+
+    <!-- ASHA -->
+    <string name="asha_connect_title">🏥  ASHA Connect</string>
+    <string name="asha_connect_subtitle">Upcoming health camps and ASHA worker visits in your area</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="no_asha_events">No events scheduled. Check back soon!</string>
+    <string name="health_camp">Health Camp</string>
+    <string name="asha_visit">ASHA Visit</string>
+    <string name="vaccination">Vaccination</string>
+    <string name="wellness_check">Wellness Check</string>
+    <string name="location_format">📍 %1$s</string>
+
+    <!-- Profile -->
+    <string name="my_profile">👤  My Profile</string>
+    <string name="dark_mode">🌙  Dark Mode</string>
+    <string name="select_language">🌐  Select Language</string>
+    <string name="full_name">Full Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="chronic_conditions">Chronic Conditions</string>
+    <string name="blood_group_label">Blood Group: %1$s</string>
+    <string name="emergency_contact">🚨  Emergency Contact</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="edit_profile">✏️  Edit Profile</string>
+    <string name="save_profile">💾  Save Profile</string>
+    <string name="save_and_continue">✅  Save &amp; Continue</string>
+    <string name="logout">🚪  Logout</string>
+    <string name="logout_confirm_title">Logout</string>
+    <string name="logout_confirm_message">Are you sure you want to logout?</string>
+    <string name="profile_updated">Profile updated!</string>
+    <string name="name_required">Name required</string>
+    <string name="age_required">Age required</string>
+    <string name="required">Required</string>
+    <string name="logged_in_with">Logged in with: %1$s</string>
+
+    <!-- Notifications -->
+    <string name="notif_medicine_title">Time for your %1$s medicine</string>
+    <string name="notif_medicine_body">%1$s — %2$s. Tap to mark as Taken.</string>
+    <string name="notif_action_taken">✓ Taken</string>
+    <string name="notif_action_skip">Skip</string>
+
+    <!-- Arrays for spinners -->
+    <string-array name="gender_options">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+    </string-array>
+
+    <string-array name="blood_group_options">
+        <item>Unknown</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+</resources>

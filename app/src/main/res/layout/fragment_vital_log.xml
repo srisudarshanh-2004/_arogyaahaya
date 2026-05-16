@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vital_log_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ── INPUT FORM ── -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/todays_readings" android:textSize="20sp" android:textStyle="bold"
+                    android:textColor="@color/text_primary" android:layout_marginBottom="16dp"/>
+
+                <!-- BP row -->
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/blood_pressure_label" android:textSize="18sp"
+                    android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="16dp">
+                    <EditText
+                        android:id="@+id/et_bp_systolic"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:hint="@string/systolic_hint"
+                        android:textSize="18sp"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:background="@drawable/bg_input_field"
+                        android:layout_marginEnd="8dp"/>
+                    <EditText
+                        android:id="@+id/et_bp_diastolic"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:hint="@string/diastolic_hint"
+                        android:textSize="18sp"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:background="@drawable/bg_input_field"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+
+                <!-- Heart Rate -->
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/heart_rate_label" android:textSize="18sp"
+                    android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+                <EditText
+                    android:id="@+id/et_heart_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="@string/heart_rate_hint"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Blood Glucose -->
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/blood_glucose_label" android:textSize="18sp"
+                    android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+                <EditText
+                    android:id="@+id/et_glucose"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="@string/blood_glucose_hint"
+                    android:textSize="18sp"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Notes -->
+                <EditText
+                    android:id="@+id/et_vital_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/notes_hint"
+                    android:textSize="16sp"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btn_save_vitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="@string/save_vitals"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/vital_green"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── 7-DAY CHART ── -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seven_day_trend"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

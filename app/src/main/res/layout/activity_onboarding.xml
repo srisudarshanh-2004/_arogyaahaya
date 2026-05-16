@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🙏 Welcome to\nArogya Sahaya"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_subtitle"
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Name -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/full_name" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. Ramaiah Gowda"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Age -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/age" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. 65"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Gender -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Gender" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textSize="18sp"
+            android:entries="@array/gender_options"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Blood Group -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Blood Group" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <Spinner
+            android:id="@+id/spinner_blood_group"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textSize="18sp"
+            android:entries="@array/blood_group_options"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Chronic Conditions -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/chronic_conditions" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Diabetes, Hypertension"
+            android:textSize="18sp"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Emergency Contact Name -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/contact_name" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_emergency_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. Suresh (Son)"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Emergency Phone -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/phone_number" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_emergency_phone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. 9876543210"
+            android:textSize="18sp"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn_save_profile"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="✅  Save &amp; Continue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

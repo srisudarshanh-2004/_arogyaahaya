@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color (lighter for dark mode) -->
+    <color name="primary">#90CAF9</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="primary_light">#1A237E</color>
+
+    <!-- SOS Red -->
+    <color name="sos_red">#E57373</color>
+    <color name="sos_red_dark">#C62828</color>
+
+    <!-- Vital green -->
+    <color name="vital_green">#81C784</color>
+
+    <!-- Background -->
+    <color name="background_primary">#121212</color>
+    <color name="background_secondary">#1E1E1E</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+
+    <!-- Neutral greys -->
+    <color name="grey_light">#333333</color>
+    <color name="grey_medium">#757575</color>
+
+    <!-- Standard -->
+    <color name="white">#000000</color>
+    <color name="black">#FFFFFF</color>
+</resources>

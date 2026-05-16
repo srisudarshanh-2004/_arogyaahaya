@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Medicine pill icon for notifications -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M4.22,4.22C2.29,6.14 2.29,9.24 4.22,11.16L11.16,18.1C13.09,20.03 16.19,20.03 18.11,18.1C20.03,16.18 20.03,13.08 18.11,11.16L11.17,4.22C9.24,2.29 6.14,2.29 4.22,4.22ZM15.68,15.68C14.54,16.82 12.73,16.99 11.4,16.04L16.04,11.4C17,12.74 16.82,14.54 15.68,15.68Z"/>
+</vector>

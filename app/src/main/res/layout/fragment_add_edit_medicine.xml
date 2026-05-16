@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_medicine"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Medicine Name -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/medicine_name_label" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_medicine_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/medicine_name_hint"
+            android:textSize="18sp"
+            android:inputType="textCapWords"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Dosage -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/dosage_label" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/dosage_hint"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Time Slots -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/when_to_take_label" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+
+        <!-- Morning -->
+        <CheckBox
+            android:id="@+id/cb_morning"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/morning"
+            android:textSize="20sp"
+            android:textColor="@color/text_primary"
+            android:buttonTint="@color/primary"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:id="@+id/layout_morning_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/time_label" android:textSize="16sp" android:textColor="@color/text_secondary"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/et_morning_time"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="08:00"
+                android:textSize="18sp"
+                android:inputType="time"
+                android:padding="8dp"
+                android:background="@drawable/bg_input_field"/>
+        </LinearLayout>
+
+        <!-- Afternoon -->
+        <CheckBox
+            android:id="@+id/cb_afternoon"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/afternoon"
+            android:textSize="20sp"
+            android:textColor="@color/text_primary"
+            android:buttonTint="@color/primary"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:id="@+id/layout_afternoon_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/time_label" android:textSize="16sp" android:textColor="@color/text_secondary"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/et_afternoon_time"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="13:00"
+                android:textSize="18sp"
+                android:inputType="time"
+                android:padding="8dp"
+                android:background="@drawable/bg_input_field"/>
+        </LinearLayout>
+
+        <!-- Night -->
+        <CheckBox
+            android:id="@+id/cb_night"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/night"
+            android:textSize="20sp"
+            android:textColor="@color/text_primary"
+            android:buttonTint="@color/primary"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:id="@+id/layout_night_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/time_label" android:textSize="16sp" android:textColor="@color/text_secondary"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/et_night_time"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="21:00"
+                android:textSize="18sp"
+                android:inputType="time"
+                android:padding="8dp"
+                android:background="@drawable/bg_input_field"/>
+        </LinearLayout>
+
+        <!-- Notes -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/notes_optional_label" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/medicine_name_hint"
+            android:textSize="18sp"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_field"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Save / Cancel -->
+        <Button
+            android:id="@+id/btn_save_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/save_medicine"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            android:backgroundTint="@color/grey_light"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

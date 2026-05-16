@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- ── Bottom nav destinations ── -->
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arogyasahaya.ui.home.HomeFragment"
+        android:label="@string/nav_home"/>
+
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.arogyasahaya.ui.medicine.MedicineFragment"
+        android:label="@string/nav_medicines">
+
+        <!-- Navigate to Add/Edit form -->
+        <action
+            android:id="@+id/action_medicineFragment_to_addEditMedicineFragment"
+            app:destination="@id/addEditMedicineFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditMedicineFragment"
+        android:name="com.arogyasahaya.ui.medicine.AddEditMedicineFragment"
+        android:label="@string/add_medicine">
+
+        <!-- Argument: medicine ID for edit mode (-1 = add mode) -->
+        <argument
+            android:name="medicineId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/vitalLogFragment"
+        android:name="com.arogyasahaya.ui.vitals.VitalLogFragment"
+        android:label="@string/vital_log_title"/>
+
+    <fragment
+        android:id="@+id/ashaFragment"
+        android:name="com.arogyasahaya.ui.asha.AshaFragment"
+        android:label="@string/asha_connect_title"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.arogyasahaya.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"/>
+
+</navigation>

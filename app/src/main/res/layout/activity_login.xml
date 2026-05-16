@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <!-- App logo / title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌿"
+            android:textSize="56sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_tagline"
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- ── Email / Mobile toggle ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_toggle_group"
+            android:layout_marginBottom="28dp">
+
+            <Button
+                android:id="@+id/btn_switch_to_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/email_tab"
+                android:textSize="16sp"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_switch_to_mobile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/mobile_tab"
+                android:textSize="16sp"
+                android:backgroundTint="@color/grey_light"
+                android:textColor="@color/text_primary"/>
+
+        </LinearLayout>
+
+        <!-- ── Email + Password fields ── -->
+        <LinearLayout
+            android:id="@+id/layout_email_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/email_label" android:textSize="18sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/email_hint"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:background="@drawable/bg_input_field"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/password_label" android:textSize="18sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/password_hint"
+                android:textSize="18sp"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:background="@drawable/bg_input_field"
+                android:layout_marginBottom="18dp"/>
+
+            <!-- Confirm password (register only) -->
+            <LinearLayout
+                android:id="@+id/layout_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/confirm_password_label" android:textSize="18sp" android:textStyle="bold"
+                    android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="@string/confirm_password_hint"
+                    android:textSize="18sp"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="18dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── Mobile Number field ── -->
+        <LinearLayout
+            android:id="@+id/layout_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/mobile_label" android:textSize="18sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/mobile_hint"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="12dp"
+                android:background="@drawable/bg_input_field"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/otp_disclaimer"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="18dp"/>
+
+        </LinearLayout>
+
+        <!-- ── Progress bar ── -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- ── Main action button ── -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/login_button"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ── Toggle Login / Register ── -->
+        <TextView
+            android:id="@+id/tv_toggle_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user_text"
+            android:textSize="17sp"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ── Skip / Continue without login ── -->
+        <TextView
+            android:id="@+id/tv_skip_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skip_login"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+</ScrollView>
